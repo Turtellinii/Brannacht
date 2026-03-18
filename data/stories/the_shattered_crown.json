@@ -1,0 +1,114 @@
+{
+  "title": "The Shattered Crown",
+  "subtitle": "A mystery of dead princes and older things",
+  "version": "1.0",
+
+  "protagonist": {
+    "background": "You have come to Ashenmoor carrying a letter addressed to someone who doesn't exist — or perhaps to you. You are a wanderer, unaffiliated, which in a city where every useful person belongs to a faction is both a liability and a rare kind of freedom. You arrived on the morning tide. You do not know yet why.",
+    "default_name": "The Wanderer",
+    "starting_description": "You stand at the edge of Dockside with the sealed letter in your coat and fifteen silver coins in your purse. The fog rolls in off the Cinder Sea. Somewhere behind you, the ship that brought you is already pulling out. You chose not to stay aboard. You are not sure why."
+  },
+
+  "starting_location": "dockside",
+  "starting_inventory": ["sealed_letter", "coinpurse", "rusty_knife"],
+  "starting_flags": {
+    "arrived_ashenmoor": true,
+    "knows_edric_dead": false,
+    "read_sealed_letter": false,
+    "faction_alignment": "none"
+  },
+
+  "opening_scene": "Ashenmoor greets you the way it greets everyone arriving by sea: with fog and the smell of the harbor. The docks stretch along the waterfront in both directions — cranes, warehouses, the occasional watchman moving with the unhurried certainty of someone who has walked this route a thousand times. A sign points north: Market Ward. Another points east: Syndicate Hall. Someone has scratched off the arrow pointing toward the keep. The morning is cold. Your coat is damp. In your inside pocket, the letter that someone put in your hand in a port three days south of here presses against your ribs, sealed and silent.",
+
+  "acts": [
+    {
+      "number": 1,
+      "title": "Arrival",
+      "description": "The player establishes themselves in Ashenmoor, encounters the three factions, and discovers that the sealed letter connects them to the death of Crown Prince Edric.",
+      "objectives": [
+        "Find somewhere to stay and orient yourself",
+        "Learn about Edric's death and the power vacuum",
+        "Make contact with at least one faction or key NPC",
+        "Read the sealed letter and understand its significance"
+      ],
+      "key_events": [
+        "Meeting Bram at the Anchor — he recognizes Edric's seal",
+        "First encounter with Captain Vael — she's suspicious of new arrivals",
+        "Discovering the Market Ward and encountering Beggar Mira",
+        "Learning the basic political situation from multiple sources"
+      ],
+      "completion_flag": "act_1_complete",
+      "completion_condition": "Player has read the sealed letter AND made contact with at least two key NPCs"
+    },
+    {
+      "number": 2,
+      "title": "The Three Pieces",
+      "description": "The player investigates Edric's death and searches for the three fragments of the broken Crown.",
+      "objectives": [
+        "Retrieve Edric's letter from the Anchor's back room",
+        "Find and enter the Old Ways",
+        "Gain access to the Temple crypt",
+        "Collect all three Crown fragments"
+      ],
+      "key_events": [
+        "Bram reveals his friendship with Edric and gives the back room key",
+        "Negotiating with Arlo Finch for access to the Old Ways",
+        "Elder Senna and the Bleakwood — learning what the Crown does when restored",
+        "Getting Church dispensation for the crypt (or bypassing the lock)",
+        "Discovery: the second fragment is in the sealed Praetor vault — Syndicate has been sitting on it"
+      ],
+      "completion_flag": "act_2_complete",
+      "completion_condition": "Player has all three Crown fragments"
+    },
+    {
+      "number": 3,
+      "title": "The Feast of the Unbound",
+      "description": "The player must make a choice about what to do with the Crown and the truth about Edric's death — before or during the annual feast where the key players will all be in one place.",
+      "objectives": [
+        "Uncover the full truth of Edric's death",
+        "Decide whether to restore the Crown and present the evidence publicly",
+        "Navigate the confrontation at the Feast",
+        "Determine the fate of Brannacht"
+      ],
+      "key_events": [
+        "The truth: Lord Eavan arranged Edric's death, commissioned by a faction leader",
+        "Reaching the Queen through Beggar Mira",
+        "The Feast — all major players in one location",
+        "Restoration of the Crown (if all fragments collected)",
+        "The ending — multiple outcomes depending on choices made"
+      ],
+      "completion_flag": "act_3_complete"
+    }
+  ],
+
+  "endings": {
+    "justice": {
+      "description": "The player presents the complete evidence at the Feast, restores the Crown, and exposes the murderer. Brannacht begins a difficult but honest reckoning.",
+      "requirements": ["all_crown_fragments", "full_evidence", "queen_audience"],
+      "tone": "Somber triumph. Things are better but not fixed."
+    },
+    "power": {
+      "description": "The player uses the evidence as leverage to install themselves as a significant power in Ashenmoor — through one of the factions, or by creating their own.",
+      "requirements": ["full_evidence", "major_faction_ally"],
+      "tone": "Ambiguous. They got something. The cost is unclear."
+    },
+    "covenant": {
+      "description": "The player sides with Elder Senna and delivers the Crown to the Covenant, who use it for the Returning — something vast and irreversible that changes Brannacht's relationship to the Weave.",
+      "requirements": ["all_crown_fragments", "covenant_trust", "covenant_knowledge"],
+      "tone": "Mysterious. Something old has changed. Whether it is better is not clear."
+    },
+    "buried": {
+      "description": "The player discovers the truth but chooses to bury it — protecting someone, or deciding the truth would destroy more than it saves.",
+      "requirements": ["full_evidence"],
+      "tone": "Heavy. The player carries something they will carry forever."
+    }
+  },
+
+  "narrator_guidance": {
+    "overall_tone": "A mystery nested inside a political thriller nested inside a fantasy about what happens when old things refuse to stay buried. Keep the mystery's urgency present — the feast is coming, and when it passes, the chance to act passes with it.",
+    "edric": "Edric should feel present even though he's dead. Bram speaks of him with grief that hasn't finished. Vael with guilt. Isolde with something complicated she won't name. The player should feel like they are building a picture of a specific person who was worth knowing.",
+    "the_crown": "The Crown is not a magic MacGuffin — it is a symbol that happens to also be functional. Treat its restoration as a serious thing with weight. When the player holds a fragment, that weight should be palpable.",
+    "faction_neutrality": "No faction is simply evil. The Pale Council is conservative but not cruel. The Covenant is alien in its priorities but not malicious. The Syndicate is amoral but not sadistic. The tragedy is structural, not individual.",
+    "time_pressure": "The Feast of the Unbound is twelve days from the player's arrival. Mention this periodically — through NPC references, posted announcements in the city, the gradual build of activity as preparation begins. Let the player feel time moving."
+  }
+}

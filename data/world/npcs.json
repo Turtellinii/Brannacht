@@ -1,0 +1,118 @@
+{
+  "npcs": {
+    "innkeeper_bram": {
+      "name": "Bram Callow",
+      "title": "Innkeeper of The Anchor",
+      "location": "the_anchor",
+      "description": "A broad man in his fifties, gone grey at the temples, with the kind of face that has spent its whole life being trusted. He moves behind his bar with the efficiency of long habit — wiping surfaces, refilling cups, producing exactly the thing a customer needs about a half-second before they ask for it. There are old scars on his hands. He does not discuss them.",
+      "personality": "Warm, careful, and deeply private. Bram is one of those people whose generosity is real but whose interior life is entirely his own. He has kept secrets for twenty years and has no intention of stopping. He talks readily about the city, the weather, the state of his ale. He does not discuss his past or the Crown Prince.",
+      "secrets": "Bram was one of the few people Prince Edric trusted outside the court. Edric used to come to the Anchor in plain clothes to escape the palace — Bram would give him a corner seat and never say a word. When Edric was dying (not drowned drunk; Bram knows this), he sent a letter by a trusted hand. The letter is under the floorboard in the back room. Bram has been waiting for the right person to give it to for two years.",
+      "knowledge": [
+        "Edric's death was not an accident. He knows this but cannot prove it.",
+        "The three factions and their general postures in the city.",
+        "Which harbor merchants are fronts for the Syndicate.",
+        "Rumor: the Crown has been reaching out through intermediaries looking for someone.",
+        "Location: The back room key is kept behind a loose brick beside the kitchen hearth."
+      ],
+      "gives_player": "The Anchor Key and the letter from Edric, once trust is established.",
+      "trust_triggers": [
+        "Player asks about Edric directly and sincerely",
+        "Player mentions the sealed letter they carry",
+        "Player does something that demonstrates they're not working for any of the three factions"
+      ],
+      "dialogue_hints": "Bram talks around things. He'll say 'some people' when he means 'Edric.' He'll gesture at the hearth when he means the back room. He does not lie — he omits. If a player asks a direct question, he'll usually answer it, but he needs to feel like the questioner deserves the truth before he volunteers anything."
+    },
+
+    "captain_vael": {
+      "name": "Vael Dreth",
+      "title": "Captain of the Harbor Watch",
+      "location": "dockside",
+      "description": "A lean woman in her forties, with close-cropped dark hair and a scar that pulls one corner of her mouth slightly upward, giving her a permanent expression of faint amusement that her eyes don't share. Her uniform is well-maintained. She does not carry a weapon visibly, which, in Vael's case, is itself a kind of display.",
+      "personality": "Vigilant, analytical, professionally suspicious. Vael took the Harbor Watch because she believes in Ashenmoor as a functional city — not the politics of the factions, not the nobility, but the ordinary machine of commerce and daily life that actually keeps 40,000 people fed. She's seen what happens when that breaks down. She will not allow it here. She is hard to bribe and impossible to intimidate. She can be reasoned with, and she respects evidence.",
+      "secrets": "Vael was present at the docks on the night Edric died. She was told to remain at her post and not intervene in whatever was happening near Slip Seven. She did not intervene. She has carried that decision for two years. She would like to unmake it but doesn't know how.",
+      "knowledge": [
+        "She saw a Syndicate boat at Slip Seven the night Edric died.",
+        "The Syndicate has three known smuggling routes through the harbor.",
+        "Lady Isolde's household guard has been spending time at the docks more than usual lately.",
+        "There is a Praetor artifact someone is trying to move through the harbor — she intercepted a partial manifest that doesn't add up."
+      ],
+      "attitude_to_player": "Suspicious of new arrivals by default. Becomes cautiously interested if the player demonstrates they're investigating Edric's death. Will not break the law to help but will look the other way for evidence that serves justice.",
+      "dialogue_hints": "Clipped, direct, professional. She doesn't do small talk. She'll tell a player exactly what she needs from them and exactly what she can offer in return. The one crack in her professionalism is the night Edric died — she becomes very still when it comes up."
+    },
+
+    "lady_isolde": {
+      "name": "Lady Isolde Ashvane",
+      "title": "Niece to the Queen; Presumptive Heir",
+      "location": "pale_quarter",
+      "description": "Tall, composed, with the kind of beauty that reads as severity — sharp features, dark eyes, a way of looking at people as if she's already considered them from every angle and has simply not yet announced her conclusion. She dresses in Ashvane grey and white, always well, never ostentatiously. She is twenty-nine years old and has been preparing for the throne for fifteen of them.",
+      "personality": "Isolde is not cruel and is not stupid, which makes her more dangerous than she would be if she were either. She is genuinely intelligent, politically pragmatic, and she believes — with some evidence — that she would be a good queen. She is also capable of ordering terrible things done efficiently and then moving on. She has done it twice already. She does not lose sleep.",
+      "secrets": "Isolde knows more about Edric's death than she should. She did not plan it — but she learned afterward who had, and she made a choice not to act on that knowledge. She told herself it was pragmatism. She has not entirely convinced herself. The Pale Council member corresponding with the Syndicate is Lord Eavan, and she's been using that knowledge to keep him cooperative for eighteen months.",
+      "knowledge": [
+        "Lord Eavan's correspondence with the Syndicate.",
+        "The approximate location of one Crown fragment (she believes it's in the Temple).",
+        "The identity of who arranged Edric's death (she will not share this voluntarily).",
+        "The political alignments of every significant player in Ashenmoor."
+      ],
+      "attitude_to_player": "Evaluating. Isolde will meet with almost anyone who can claim a reason. She's looking for useful people or dangerous ones to neutralize. She is not hostile unless given reason, but she is never on anyone's side but her own.",
+      "dialogue_hints": "Formal register, correct and precise. She asks questions more than she answers them. She occasionally lets something honest slip — usually about Edric — and then covers it with something political. She respects players who don't posture."
+    },
+
+    "druid_senna": {
+      "name": "Elder Senna",
+      "title": "Elder of the Thornwood Covenant",
+      "location": "bleakwood_edge",
+      "description": "Age is genuinely difficult to place — there is something wrong with her chronology, though not in a way you can identify specifically. Her hair is white and long. Her eyes are the color of bark after rain. She is usually standing somewhere you didn't see her arrive. She wears Covenant robes the color of old moss and carries a walking staff that looks like a branch she just picked up, which is approximately true.",
+      "personality": "Senna speaks in the way of people who have more information than they choose to share and have made peace with that. She is not deliberately obscure — she simply believes that some things cannot be understood except by experiencing them, and that shortcutting understanding is not understanding. She is warm, in an ancient and impersonal way — like a forest is warm in autumn, which is to say: not especially warm, but present.",
+      "secrets": "Senna knows what the Binding Stone beneath the Elder Tree is for. She knows the Covenant is waiting for something she has only seen in Weave-reading, a possibility rather than a certainty. She suspects the player is the catalyst they have been waiting for, but she will not say this directly.",
+      "knowledge": [
+        "The full geography of the Old Ways beneath Ashenmoor.",
+        "The nature of the broken Binding Stone in the crypt (it was the lock on something).",
+        "The Praetor's original purpose for Brannacht, as best as the Covenant has understood it.",
+        "Where the second Crown fragment is (in a vault in the Old Ways, Syndicate-adjacent).",
+        "The fact that the Crown fragments, reunited, do something. She knows what. She will not say unless the player has proven they will use the knowledge well."
+      ],
+      "gives_player": "The Druidic Charm (needed for Bleakwood access), information, and occasional cryptic warnings.",
+      "dialogue_hints": "She answers questions with other questions sometimes. She speaks of the Weave as if it is the most natural thing in the world — because to her it is. She will occasionally pause mid-sentence and look at something the player cannot see before continuing. She always knows things she shouldn't."
+    },
+
+    "syndicate_arlo": {
+      "name": "Arlo Finch",
+      "title": "Senior Agent, Iron Syndicate (Ashenmoor Branch)",
+      "location": "syndicate_hall",
+      "description": "A pleasant-looking man in his late thirties, expensively dressed in understated ways — the buttons on his coat are iron, not brass, a Syndicate custom. He has the face and manner of someone who is always slightly more at ease than you are, which is accurate: he has been trained for exactly this. He smiles often. The smiles are genuine. He is genuinely pleased to meet most people.",
+      "personality": "Arlo is, in his way, an honest man. He will tell you exactly what he wants, what he can offer, and what the deal is. He does not make promises he can't keep. He also does not operate outside the Syndicate's interests, and those interests are entirely transactional. He likes people, finds them interesting, and would sell any of them without hesitation if the numbers worked out. He has done it before.",
+      "secrets": "Arlo knows that the Syndicate boat was at Slip Seven the night Edric died. He was not personally involved but he knows the transaction that put it there. He can't share this without exposing the Syndicate, and the Syndicate does not expose itself. However — he is aware that the situation is becoming unstable, and instability is bad for business. He is quietly looking for a resolution that preserves the Syndicate.",
+      "knowledge": [
+        "The Old Ways under Ashenmoor, including the sealed vault.",
+        "The Syndicate's connection to Edric's death (not the full truth, but the transaction).",
+        "Lord Eavan's correspondence with the Syndicate.",
+        "Where the second Crown fragment is — it's in the sealed Old Ways vault.",
+        "The Syndicate has a buyer for a Praetor artifact and has been moving pieces toward the sale."
+      ],
+      "gives_player": "Access to the Old Ways (with a guide or a map), information at a price, the Syndicate Token.",
+      "dialogue_hints": "Smooth, pleasant, business-like. He frames everything as a transaction. He's not threatening unless threatened — and even then, he'd prefer to negotiate. He'll offer the player something useful to get something he wants, which is usually information or access."
+    },
+
+    "beggar_mira": {
+      "name": "Mira Solt",
+      "title": "Retired Spy for the Crown; Current Intelligence Asset",
+      "location": "market_ward",
+      "description": "To all appearances: an old woman with a patchy grey shawl and a way of occupying corners that makes people look past her. Her eyes are bright and she moves, when unobserved, with a precision that doesn't fit the impression she projects. She has been watching the market for fifteen years and knows everything that passes through it.",
+      "personality": "Sharp, dry, occasionally funny, deeply pragmatic. She is loyal to the Crown — to the institution and to the Queen personally — and she has been conducting a quiet private investigation into Edric's death since the week after he died. She has not found enough evidence yet. She is suspicious of everyone, including the player, for approximately the first two conversations.",
+      "secrets": "She was the old spy the Queen spoke to. She has been tasked, in the vaguest terms, with finding someone who could find the truth. She has narrowed it down to: the player, or a merchant from Vance who turned out to be working for the Syndicate.",
+      "knowledge": [
+        "Three pieces of evidence she has collected about Edric's death — partial, not conclusive.",
+        "The location of the Queen's private audience schedule (and how to request one).",
+        "Who in the Pale Quarter can be trusted and who cannot.",
+        "A contact in the Church of the Unbound who knows the Temple's secrets."
+      ],
+      "gives_player": "Connection to the Queen; her three pieces of evidence; the name of the Church contact.",
+      "trust_triggers": [
+        "Player mentions the sealed letter",
+        "Player demonstrates they are not working for any faction",
+        "Player asks about Edric specifically"
+      ],
+      "dialogue_hints": "She plays her role as a beggar until she trusts you, at which point she simply stops performing it and talks like herself, which is quite different. She has a habit of saying 'well' before she says something true and 'of course' before she says something she doesn't entirely believe."
+    }
+  }
+}

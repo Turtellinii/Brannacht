@@ -1,0 +1,105 @@
+{
+  "items": {
+    "sealed_letter": {
+      "name": "A Sealed Letter",
+      "description": "A letter sealed with black wax impressed with a sigil you don't recognize — a crown fractured down the center. The envelope is addressed in a cramped, urgent hand: 'To the one who walks between.' The paper is slightly damp at the corners, as if it was carried a long way.",
+      "properties": ["readable", "quest_item"],
+      "examine_text": "The seal is the fractured crown — the personal sigil of Crown Prince Edric, though you'd have to know that to identify it. The letter inside is written in two hands: the first neat and deliberate, the second rushed, trailing off at the bottom of the page. It reads: 'If you are reading this, then I was right that someone would come. The truth about what was done to me is in three pieces, like the Crown itself. Find the three fragments and you will find what killed me. The first piece is beneath the Anchor — ask Bram. The second is in the Old Ways, in the Syndicate's shadow. The third is in the crypt the Church will not open. Come quickly. The feast of the Unbound is soon.' The second hand has added, below: 'He sent this three days before he died. He knew. —B'",
+      "use_effect": "Reading the letter to the right NPCs unlocks major story paths. Bram will recognize Edric's seal. Beggar Mira will recognize the second hand as someone she knew."
+    },
+
+    "coinpurse": {
+      "name": "A Worn Coinpurse",
+      "description": "Leather, worn soft with use. Contains fifteen silver coins — enough to live in Ashenmoor for two weeks without being careful.",
+      "properties": ["currency"],
+      "examine_text": "The coins are Brannacht standard — the Ashvane crown on one face, the anchor of the harbor on the other. Fifteen of them."
+    },
+
+    "rusty_knife": {
+      "name": "A Rusty Knife",
+      "description": "A short-bladed knife, more tool than weapon, with a handle wrapped in stained leather. The blade has seen use.",
+      "properties": ["weapon", "tool"],
+      "examine_text": "The edge is still serviceable if not elegant. Good for cutting rope, convincing reluctant individuals to stop, and not much else.",
+      "use_effect": "Can be used as a weapon in confrontations; can also cut through certain materials."
+    },
+
+    "anchor_key": {
+      "name": "A Small Iron Key",
+      "description": "A key cut for a simple lock, attached to a length of cord. It smells faintly of the kitchen.",
+      "properties": ["key"],
+      "examine_text": "Bram says it's for the back room. There's a small scratch on the head of the key — an A, maybe, or just wear.",
+      "use_location": "anchor_backroom"
+    },
+
+    "druidic_charm": {
+      "name": "A Druidic Charm",
+      "description": "A small carving in pale wood — the shape of an oak leaf, with a hole bored through the stem so it can be worn on a cord. Elder Senna gave it to you without explanation.",
+      "properties": ["magical", "wearable"],
+      "examine_text": "The carving is precise. The wood has a warmth to it that doesn't come from your hand. Wearing it, you notice the sounds of the Bleakwood resolve slightly — clearer, less disorienting. The Covenant uses these to mark those with permission to pass.",
+      "use_effect": "Grants access to Covenant territory in the Bleakwood. Guards at the forest edge recognize it."
+    },
+
+    "syndicate_token": {
+      "name": "An Iron Syndicate Token",
+      "description": "A coin-sized disc of black iron, stamped with the Syndicate mark: an iron ring around an open hand. Not currency — an identifier.",
+      "properties": ["access"],
+      "examine_text": "Arlo Finch gave this to you. It means you have Syndicate standing — temporary, conditional, and not transferable. It will get you into the Counting House's back rooms and, more importantly, past the checkpoint in the Old Ways.",
+      "use_effect": "Grants access to restricted areas of the Syndicate Counting House and the Old Ways."
+    },
+
+    "old_map": {
+      "name": "A Rolled Map",
+      "description": "An old document, rolled and tied with a piece of cord. The paper is yellowed. Purchased from a market stall.",
+      "properties": ["readable", "map"],
+      "examine_text": "Unrolled, this is a partial chart of Ashenmoor — but not the current city. The streets don't match. After a moment, you realize: this is the city as it was over the foundations, the Praetor level. Passages run beneath every major building. Several are marked with small crosses. Three of those are circled in different-colored ink, added later. One of the circles is under the Temple.",
+      "use_effect": "Provides access to the Old Ways without a Syndicate guide. Some of the marked passages lead to locations not otherwise accessible."
+    },
+
+    "edric_letter": {
+      "name": "Edric's Letter",
+      "description": "A folded document retrieved from beneath the floorboard in the Anchor's back room. The paper is different from the sealed letter — older, more deliberate.",
+      "properties": ["readable", "quest_item"],
+      "examine_text": "Written in Edric's neat hand: 'I know I am unlikely to survive what is coming, so I have made arrangements. The Crown of Brannacht was never destroyed — my ancestor broke it deliberately and gave the pieces to three safekeepers, with instructions that they be rejoined only when Brannacht faced an existential threat from within. The pieces: the Crypt of the Unbound, the Old Ways (the Syndicate has been sitting on it unknowing), and the third I took myself and have placed somewhere they will not look. If you are reading this, I did not survive to move it. You will need to find it. Look for the stone that hums. The feast is in twelve days. Be ready.' A date follows — two days before Edric's death."
+    },
+
+    "bleakwood_herb": {
+      "name": "Bleakwood Fenris Root",
+      "description": "A twisted root harvested from deep in the Bleakwood, wrapped in a Covenant cloth. It smells like pine and cold water.",
+      "properties": ["consumable", "trade"],
+      "examine_text": "Fenris root is rare outside the Bleakwood and highly valued by apothecaries. In the city, it fetches a high price. It also, according to the Covenant, suppresses Weave-sensitivity — useful if you want to walk through a heavily Woven area without the headache.",
+      "use_effect": "Can be consumed to resist Weave effects for a short time; can be sold for significant coin."
+    },
+
+    "crown_fragment": {
+      "name": "A Fragment of the Crown",
+      "description": "A curved section of iron circlet — dark, cold to the touch, with a weight that doesn't match its size. Along the broken edges, faint scoring that looks almost like script.",
+      "properties": ["quest_item", "magical"],
+      "examine_text": "The iron is unlike anything in current use — the alloy is wrong, too hard, with a faint blue sheen in certain lights. The scoring on the edges is Praetor script. Elder Senna can read it, if asked. Holding it, something in the Weave shifts — like a note just beyond your hearing range.",
+      "use_effect": "One of three fragments needed to restore the Crown. Reuniting all three triggers the final act of the story."
+    },
+
+    "praetor_stone": {
+      "name": "A Praetor Binding Stone",
+      "description": "A flat piece of stone, palm-sized, with a deep spiral carved into one face. Found in the Temple.",
+      "properties": ["magical", "quest_item"],
+      "examine_text": "The spiral carving is precise — mathematical in a way that seems beyond what the carving tools available to any civilization could produce. Touching it, you feel the Weave around you respond, as if the stone is pulling at a thread. The Church considers this an object of veneration. Elder Senna considers it a functional device.",
+      "use_effect": "Can be used in conjunction with the Crown fragments in the Temple crypt. The Covenant knows how."
+    },
+
+    "isolde_ring": {
+      "name": "The Ring of House Ashvane",
+      "description": "A signet ring in Ashvane colors — grey enamel and white gold, the crown device on the face. Lady Isolde gives these rarely and deliberately.",
+      "properties": ["access", "signet"],
+      "examine_text": "This ring opens doors in the Pale Quarter. It also sends a message to anyone who recognizes it: this person has Isolde's provisional trust, which is worth something and costs something.",
+      "use_effect": "Grants access to restricted areas in the Pale Quarter and Ashvane Keep. Makes the Crown garrison treat the player as a known entity."
+    },
+
+    "crow_seal": {
+      "name": "The Crown Prince's Personal Seal",
+      "description": "A small metal seal — the fractured crown device, identical to the wax seal on the letter you arrived with. This is the original.",
+      "properties": ["quest_item", "signet"],
+      "examine_text": "Edric's personal seal. Finding this confirms what you suspected: he knew. He sealed the letters himself. He was preparing to die.",
+      "use_effect": "Proof of Edric's direct communication. Convinces the Queen's proxy of the player's connection to Edric."
+    }
+  }
+}

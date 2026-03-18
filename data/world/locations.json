@@ -1,0 +1,215 @@
+{
+  "locations": {
+    "dockside": {
+      "name": "Dockside — Ashenmoor Harbor",
+      "description": "The harbor district is all salt-rot and industry. Warehouses lean over narrow channels where flat-bottomed cargo boats wait for the tide. The fog is always thicker here, rolling in off the Cinder Sea in waves that swallow the lanterns whole. Dock workers move through it like ghosts, calling to each other in shorthand. The smell: brine, tar, fish oil, and something faintly sulfurous from the black water at low tide.",
+      "atmosphere": "Busy but impersonal. No one asks questions in Dockside — not because they're unfriendly but because they don't care. The harbor runs on its own logic and has no patience for tourists.",
+      "exits": {
+        "north": "market_ward",
+        "east": "syndicate_hall",
+        "inn": "the_anchor"
+      },
+      "npcs_present": ["captain_vael"],
+      "items_present": [],
+      "details": {
+        "the_docks": "Twelve slips, half of them occupied. A harbormaster's office sits at the end of the main pier — a squat stone building with a lantern above the door that swings in any wind.",
+        "the_watch_post": "Captain Vael Dreth runs the harbor watch from a post at the dock gate. Two guards are always there. Vael herself is often present, watching arrivals with the particular alertness of someone who has learned that trouble comes by sea.",
+        "the_channels": "Small boats navigate channels between the warehouse blocks. Most carry cargo. A few carry things that aren't listed in the harbormaster's ledger."
+      },
+      "secrets": "The Syndicate maintains a hidden cache room beneath Warehouse Seven — the one with the red door. The Old Ways have an entrance inside it, sealed with a Praetor lock.",
+      "starting_location": true
+    },
+
+    "the_anchor": {
+      "name": "The Anchor Inn",
+      "description": "A three-story building of dark timber and pale mortar, crammed between two warehouses on Slip Street. The sign — an anchor on a field of tarnished gold — hangs crookedly. Inside: low ceilings, long tables, a hearth that always seems to be burning something green-tinged that no one can identify. Bram Callow has run this place for twenty years and keeps the cheapest beds in Dockside.",
+      "atmosphere": "Comfortable in the way that worn-out places sometimes are. The clientele are dock workers, sailors between ships, and travelers who have run out of reasons to go somewhere better. It is not safe in any technical sense, but it operates by its own codes — Bram has a long memory for those who cause trouble.",
+      "exits": {
+        "out": "dockside",
+        "backroom": "anchor_backroom"
+      },
+      "npcs_present": ["innkeeper_bram"],
+      "items_present": [],
+      "details": {
+        "the_common_room": "Tables, benches, a bar of stained oak. Bram serves ale, salt fish, and bread. The bread is better than it looks.",
+        "the_rooms": "Six rooms upstairs. Small, cold in winter, but private. A room is three copper a night.",
+        "the_hearth": "Whatever Bram burns in that hearth, the smoke smells faintly of pine and old leaves. He won't say what it is."
+      },
+      "secrets": "Bram was friends with Crown Prince Edric, who used to come to Dockside in plain clothes. Bram has never spoken of this to anyone connected to the nobility. He has a letter Edric left with him — to be opened 'when someone asks the right question.'"
+    },
+
+    "anchor_backroom": {
+      "name": "The Anchor — Back Room",
+      "description": "A room behind the kitchen, accessible through a low door. Shelves of supplies, a table, two chairs, and the smell of vinegar and old wood. Bram uses it for conversations he doesn't want overheard.",
+      "atmosphere": "Private. The walls are thick enough that sound doesn't carry.",
+      "exits": {
+        "out": "the_anchor"
+      },
+      "npcs_present": [],
+      "items_present": ["anchor_key"],
+      "locked": true,
+      "lock_item": "anchor_key",
+      "details": {
+        "the_loose_board": "One floorboard near the far wall sits slightly higher than the others. Beneath it: a small oilcloth package containing Edric's letter."
+      },
+      "secrets": "Edric's letter is here. It says: 'The Crown was never broken. It was given away. Look beneath the Temple, before the feast of the Unbound. Come alone.'"
+    },
+
+    "market_ward": {
+      "name": "The Market Ward",
+      "description": "The commercial heart of Ashenmoor spreads across five city blocks: stalls packed close enough that two people can't walk abreast, merchants calling prices in overlapping waves, the occasional pickpocket moving like a fish in current. The fog is thinner here — the city's own heat burns it back by midmorning. Smells: bread, livestock, leather, burned sugar from a candy-maker near the east gate.",
+      "atmosphere": "Loud and alive. Hundreds of people cycling through constantly. Easy to be anonymous; easy to be noticed if you stand still.",
+      "exits": {
+        "south": "dockside",
+        "north": "pale_quarter",
+        "east": "old_temple",
+        "west": "syndicate_hall"
+      },
+      "npcs_present": ["beggar_mira"],
+      "items_present": ["old_map"],
+      "details": {
+        "the_market_stalls": "Produce, fish, cloth, tools, spices, secondhand weapons. Most vendors have been here for years and know each other.",
+        "the_fountain": "A stone fountain at the market's center, dry since last winter. Someone has left flowers at its base — fresh, which means recently.",
+        "the_map_seller": "A stall near the east gate sells maps. Most are decorative. One — an old one, rolled and unremarkable — is a partial chart of the Old Ways beneath Ashenmoor."
+      },
+      "secrets": "Beggar Mira is not a beggar. She is Mira Solt, retired spy for the Crown. She watches the market for unusual arrivals and reports to the Queen's remaining loyal advisor."
+    },
+
+    "pale_quarter": {
+      "name": "The Pale Quarter",
+      "description": "Ashenmoor's old noble district — white-plastered buildings, wide streets designed for carriages, iron street-lamps that burn cleaner oil than the rest of the city. The architecture is a century old and built to impress. It still does, though the impression it makes is increasingly one of strain: the plaster is kept white at significant expense, and you can sometimes see where repairs have been made less carefully than before.",
+      "atmosphere": "Formal and watchful. Guards in Ashvane livery patrol in pairs. The residents here don't look at strangers, which is itself a kind of surveillance.",
+      "exits": {
+        "south": "market_ward",
+        "north": "ashvane_keep",
+        "east": "old_temple"
+      },
+      "npcs_present": ["lady_isolde"],
+      "items_present": [],
+      "details": {
+        "white_hall": "The Hall of Lords — meeting place of the Pale Council. The doors are iron-banded oak and are never open to the public. Guards outside watch who approaches.",
+        "isolde_house": "Lady Isolde maintains her household in the Ashvane townhouse on Pale Street. She holds public audiences twice a week by appointment."
+      },
+      "secrets": "One of the Pale Council members has been in private correspondence with the Iron Syndicate for two years. Lady Isolde knows and is using it as leverage."
+    },
+
+    "ashvane_keep": {
+      "name": "Ashvane Keep",
+      "description": "The old castle sits on a promontory over the harbor, connected to the Pale Quarter by a causeway. It is not a beautiful castle — it was built for defense, and centuries of additions have given it a lumpy, organic quality, like a tree that has grown around obstacles. The Queen lives here. The garrison is 200 men. The gates are open during daylight hours but closely watched.",
+      "atmosphere": "Imposing. The guards are professional and not easily bribed — they work for the garrison commander, who reports to the Queen, and the Queen's remaining loyalists are among her most reliable people.",
+      "exits": {
+        "south": "pale_quarter"
+      },
+      "npcs_present": [],
+      "items_present": [],
+      "access_requirement": "royal_audience or smuggled",
+      "details": {
+        "the_great_hall": "Still used for formal occasions. The crown of Brannacht is displayed here in a case of Praetor glass — clear, unscratched, apparently indestructible. The crown itself is a simple iron circlet. Some say it is not the original.",
+        "the_queens_tower": "The Queen's private rooms. Almost impossible to reach without an appointment or extraordinary means."
+      },
+      "secrets": "The crown in the Great Hall is a copy made forty years ago when the original cracked along an invisible seam. The original is in three pieces, hidden separately. No one alive knows all three locations except the Queen."
+    },
+
+    "thornwood_gate": {
+      "name": "Thornwood Gate — The Southern District",
+      "description": "The southernmost district of Ashenmoor, where the city thins out into vegetable gardens and small holdings before the Bleakwood begins in earnest. The gate itself is old stone with a portcullis that gets stuck in damp weather. Beyond it, the Bleakwood Road runs between hedgerows that become, over the course of a mile, something denser and less manageable.",
+      "atmosphere": "Quieter than the rest of the city. The people here are mostly smallholders and those who work the forest edge — loggers (operating at safe margins), herb-gatherers with Covenant permission, and a few families who have lived here since before the kingdom.",
+      "exits": {
+        "north": "market_ward",
+        "south": "bleakwood_edge"
+      },
+      "npcs_present": [],
+      "items_present": [],
+      "details": {
+        "the_waystone": "A carved stone post at the gate junction, older than the gate itself. Praetor work. It has no inscription anyone can read, but it hums faintly if you press your hand to it at night."
+      }
+    },
+
+    "bleakwood_edge": {
+      "name": "The Bleakwood Edge",
+      "description": "The forest does not begin gradually. One moment there is a lane between hedges; the next, old-growth oak and ash close overhead and the light goes green and filtered. The Covenant has maintained this place for centuries — not in any decorative sense, but in the way that a room is maintained when someone actually lives in it. The undergrowth is thick but navigable if you know where to step. The sounds change: birdsong becomes specific, identifiable, almost conversational.",
+      "atmosphere": "Charged. Something in the air here carries weight. The Weave is strong enough that even those with no training feel it as a sort of pressure behind the eyes. Not threatening — watchful.",
+      "exits": {
+        "north": "thornwood_gate",
+        "deeper": "covenant_sanctuary"
+      },
+      "npcs_present": ["druid_senna"],
+      "items_present": ["bleakwood_herb"],
+      "access_requirement": "druidic_charm or covenant_permission",
+      "details": {
+        "the_marker_stones": "Flat stones placed at irregular intervals, carved with spiral patterns. They mark the boundary of Covenant territory. Crossing them without invitation is considered an act of aggression.",
+        "the_elder_tree": "A single ancient oak, wider than three people linking hands, standing apart from the forest. Elder Senna is often found beneath it, though never quite where you left her."
+      },
+      "secrets": "Beneath the Elder Tree is a Praetor Binding Stone that the Covenant has been studying for two centuries. They believe it contains instructions for something they call the Returning — a process they have not attempted and do not fully understand."
+    },
+
+    "syndicate_hall": {
+      "name": "The Iron Syndicate Counting House",
+      "description": "A wide, solid building of dressed stone on the harbor's east side — built like a fortress, which is accurate. The Syndicate's Ashenmoor offices occupy two floors; the basement is inaccessible to visitors. The sign above the door is the Syndicate's mark: an iron ring enclosing an open hand. Inside: clerks, ledgers, and the faint smell of money, which is to say: paper, ink, and stress.",
+      "atmosphere": "Professional. The Syndicate runs on transaction and efficiency. Everyone who works here has signed agreements of non-disclosure and knows exactly what the penalties are. They are not unfriendly — hospitality is useful — but they do not waste warmth.",
+      "exits": {
+        "west": "dockside",
+        "east": "market_ward"
+      },
+      "npcs_present": ["syndicate_arlo"],
+      "items_present": [],
+      "details": {
+        "the_front_office": "Where transactions happen. A clerk takes names, requests, and payments. All appointments are logged.",
+        "the_negotiation_room": "A private room with a single table and four chairs. No windows. Conversations here are confidential by Syndicate custom, which is the only kind of custom the Syndicate takes seriously."
+      },
+      "secrets": "The basement connects to the Old Ways. Arlo Finch has a key. The Syndicate uses this route for shipments they prefer not to log."
+    },
+
+    "old_temple": {
+      "name": "The Temple of the Unbound",
+      "description": "The oldest building in Ashenmoor, possibly the oldest structure in the kingdom that is still standing. The Church of the Unbound — a faith that venerates the void left by the Praetors as a kind of holy absence — maintains it as a place of worship, though the congregation is small and aging. The stonework is Praetor: large blocks fitted without mortar, precisely aligned to something, the windows placed where the light enters in ways that feel deliberate.",
+      "atmosphere": "Genuinely old. The weight of centuries is palpable in the silence. Even people who feel nothing in most places feel something here — not supernatural, exactly, but the weight of accumulated time.",
+      "exits": {
+        "west": "market_ward",
+        "south": "pale_quarter",
+        "below": "old_temple_crypt"
+      },
+      "npcs_present": [],
+      "items_present": ["praetor_stone"],
+      "details": {
+        "the_nave": "The main hall, with benches worn smooth by centuries of use. At the far end, an altar of Praetor glass — identical to the case in Ashvane Keep. Whatever it was designed to hold is gone.",
+        "the_crypt_entrance": "A locked iron grate in the floor behind the altar. The Church keeps the key. The crypt below is Praetor — the Church considers it sacred and does not permit access without dispensation."
+      },
+      "secrets": "The crypt contains the third fragment of the broken Crown. The Church doesn't know. They consider it an object of Praetor origin and have sealed it without study. Edric knew."
+    },
+
+    "old_temple_crypt": {
+      "name": "The Temple Crypt",
+      "description": "Beneath the temple: Praetor construction, unmodified. The walls are smooth and dry despite being below street level — whatever the Praetors used to seal stone still holds. The light comes from faint phosphorescence in the rock itself, a blue-grey glow that provides just enough to see by. The air is cold and absolutely still.",
+      "atmosphere": "Uncanny. The crypt has not changed in three centuries. Everything the Praetors left here is exactly as they left it. The Weave is dense — Weavers who enter describe it as standing inside a heartbeat.",
+      "exits": {
+        "up": "old_temple"
+      },
+      "npcs_present": [],
+      "items_present": ["crown_fragment"],
+      "access_requirement": "crypt_key or picked_lock",
+      "details": {
+        "the_binding_circles": "Praetor circles etched in the floor — geometric, precise, inexplicable. Several still glow faintly. One is broken, the stone cracked along a diagonal.",
+        "the_sealed_alcove": "A recess in the far wall, sealed with Praetor glass. Inside, visible but untouched: what appears to be a fragment of iron circlet, and a folded document."
+      }
+    },
+
+    "old_ways_passage": {
+      "name": "The Old Ways — Passage beneath Ashenmoor",
+      "description": "Praetor stonework below the streets: corridors of fitted stone, some wide enough for carts, some barely passable single-file. The air moves with a purpose, suggesting ventilation systems still functioning after three centuries. Every twenty feet, a Praetor glyph on the wall — the same symbol, repeated. No one knows what it means. Several scholars have theories. None of them agree.",
+      "atmosphere": "Disorienting. The passages don't follow the street grid above — they follow their own logic, which does not always align with human navigation. Newcomers get lost. The Syndicate agents who use these routes have memorized them over years.",
+      "exits": {
+        "warehouse": "dockside",
+        "temple": "old_temple_crypt",
+        "syndicate": "syndicate_hall"
+      },
+      "npcs_present": [],
+      "items_present": [],
+      "access_requirement": "old_ways_map or syndicate_guide",
+      "details": {
+        "the_main_corridor": "The primary route runs north-south, beneath the city's spine. Syndicate chalk marks in white indicate which passages are in use.",
+        "the_sealed_vault": "One passage ends at a Praetor door — seamless, with no visible handle or lock. The Syndicate has tried every method they know. It has not opened."
+      }
+    }
+  }
+}

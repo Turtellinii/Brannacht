@@ -1,0 +1,67 @@
+{
+  "world_name": "Brannacht",
+  "tagline": "A fog-shrouded kingdom where old blood feuds and older magic refuse to die.",
+
+  "overview": "Brannacht is a coastal kingdom of mist and stone, built atop the ruins of the Praetor civilization — a culture that vanished three centuries ago, leaving behind sealed vaults, inscrutable glyphs, and a faint wrongness in the earth that animals still sense. The living kingdom is medieval in character: walled cities, lantern-lit harbor towns, a feudal nobility clinging to its titles. But the Praetors linger in every cracked foundation and warped cornerstone, and their influence is not merely architectural.",
+
+  "history": {
+    "praetor_age": "The Praetors ruled Brannacht for an unknowable span before their sudden collapse. They built the Old Ways — tunnel networks beneath every major settlement — and left behind Binding Stones inscribed with purposes that scholars still argue about. Their downfall left no survivors and no explanation. The Church of the Unbound considers their absence a mercy.",
+    "kingdom_founding": "The Kingdom of Brannacht was established approximately 300 years ago by the Ashvane dynasty, who unified feuding coastal clans under a single banner. They built Ashenmoor at the mouth of the River Asch, deliberately placing the capital atop a Praetor ruin — whether as a claim to legitimacy or an act of defiance depends on who you ask.",
+    "recent_events": "Two years ago, Crown Prince Edric Ashvane — young, reformist, beloved by commoners — died in the harbor. The official account says he drowned drunk after a feast. The unofficial accounts number in the dozens. Queen Mira Ashvane, his mother, has aged a decade since his death and refuses to name a successor. The resulting power vacuum has made Ashenmoor treacherous."
+  },
+
+  "magic": {
+    "the_weave": "Magic in Brannacht operates through something scholars call the Weave — invisible threads of causality that run through people, places, and objects. Most people interact with it unconsciously: a feeling that today is wrong, a dream that comes true. Practitioners who study it deliberately are called Weavers, and they are rare, distrusted, and usually working for someone powerful.",
+    "praetor_binding": "The Praetors worked with the Weave at a scale no one has replicated. Their Binding Stones can seal doors, preserve organic material indefinitely, or — according to the Covenant — anchor souls in place. Praetor artifacts tend to disturb the Weave around them in ways that Weavers describe as 'noise'.",
+    "limitations": "Magic is subtle in Brannacht. There are no fireballs. What Weavers can do: read the emotional residue of a place, find threads connecting events, sometimes nudge probability. It requires calm and costs focus. Any strong emotion — fear, grief, rage — severs a Weaver's concentration."
+  },
+
+  "geography": {
+    "ashenmoor": "Brannacht's capital and largest city, built at the mouth of the River Asch where it meets the Cinder Sea. Population approximately 40,000. Perpetual sea fog gives it a grey, muted quality. The city is divided into districts by old canal-walls that now serve as neighborhood boundaries.",
+    "the_bleakwood": "An ancient forest south and east of Ashenmoor, dense and old-growth, where the Thornwood Covenant maintains their sanctuaries. The Weave is strong here — disorienting to outsiders, comforting to those trained in it. Animals are unnaturally still near Covenant territory.",
+    "the_old_ways": "The Praetor tunnel networks that run beneath Ashenmoor. Known entrances exist but most are warded or collapsed. The Church of the Unbound has jurisdiction over the ones it has found, but the Syndicate has mapped several others and uses them for discreet deliveries.",
+    "cinder_sea": "The sea west of Ashenmoor. Warm, dark water with a faint mineral smell. Named for the volcanic islands visible on clear days — black cinder cones that occasionally belch smoke."
+  },
+
+  "factions": {
+    "pale_council": {
+      "name": "The Pale Council",
+      "description": "The alliance of noble houses that nominally supports the Queen and quietly supports Lady Isolde Ashvane as her successor. They meet in the Pale Quarter of Ashenmoor in a building everyone calls the White Hall, though its actual name is the Hall of Lords. Conservative, suspicious of the Covenant, and deeply invested in the current power structure.",
+      "leader": "Lady Isolde Ashvane (Queen's niece, unofficial)",
+      "wants": "A smooth transition of power to Isolde; no disruption; the Syndicate kept in its place; the Covenant kept in its forest.",
+      "resources": "Old money, city guards, the ear of the Queen (sometimes), control of the harbor tariffs.",
+      "attitude_toward_player": "Suspicious by default. Can become allies if the player proves useful and unthreatening. Isolde is calculating and patient."
+    },
+    "thornwood_covenant": {
+      "name": "The Thornwood Covenant",
+      "description": "An order of druids and Weavers based in the Bleakwood, older than the kingdom itself. They hold that Brannacht's land has a will of its own and that the Ashvane dynasty's reign is a temporary irritant. They are not violent revolutionaries — they are patient. They have been waiting three centuries.",
+      "leader": "Elder Senna (ancient, possibly older than she appears)",
+      "wants": "Return of the Old Ways to Covenant custody; recognition of their territorial rights; investigation of the Praetor ruins under the Covenant's supervision.",
+      "resources": "Weavers, the loyalty of rural communities, knowledge of the Bleakwood, possible access to sealed Praetor sites.",
+      "attitude_toward_player": "Cryptic interest. The Covenant rarely speaks plainly. They will help the player if they believe the player serves the land's interests — which they'll define themselves."
+    },
+    "iron_syndicate": {
+      "name": "The Iron Syndicate",
+      "description": "Ashenmoor's dominant merchant guild, built over three generations from a spice trading company into something that controls significant portions of the city's food supply, shipping lanes, and an unknown number of debt arrangements with noble families. Pragmatic and transactional. They don't want power — they want the conditions that let them make money, which sometimes looks like the same thing.",
+      "leader": "Factor-General Orla Kesh (not present in the city; represented by agents)",
+      "wants": "Stability — or instability they can predict and profit from. Access to the Old Ways for logistics. Whoever takes the throne needs to honor existing trade agreements.",
+      "resources": "Money, information networks, the Old Ways routes they've mapped, leverage over half the noble houses.",
+      "attitude_toward_player": "Purely transactional. The Syndicate will help anyone who pays or proves useful. They will betray anyone if the price is right. They know this about themselves and don't consider it a flaw."
+    },
+    "crown": {
+      "name": "The Crown",
+      "description": "Queen Mira Ashvane rules but does not govern. She is grief-stricken, increasingly reclusive, and rumored to be ill. Her actual authority flows through advisors who have their own allegiances. The Crown as an institution is a shell being fought over by the three factions.",
+      "leader": "Queen Mira Ashvane",
+      "wants": "The Queen wants the truth about her son's death. She has not said this publicly. She has said it once, to an old spy she trusted.",
+      "resources": "Formal legal authority, the castle garrison, and the loyalty of citizens who still believe in the institution.",
+      "attitude_toward_player": "The Queen will not be easily reached. Her proxy in the city is an old spy named Mira (no relation) who passes information through the beggar network."
+    }
+  },
+
+  "themes": [
+    "Political intrigue in a city holding its breath",
+    "The weight of a dead young man on everyone who knew him",
+    "Old magic that does not care about human kingdoms",
+    "Loyalty, betrayal, and the question of what the truth costs"
+  ]
+}
