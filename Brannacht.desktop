@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Brannacht
+Comment=AI Text Adventure
+Exec=bash -c "cd /home/user/Brannacht && bash play.sh; exec bash"
+Terminal=true
+Icon=utilities-terminal
+Categories=Game;
